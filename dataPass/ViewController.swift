@@ -30,18 +30,22 @@ class ViewController: UIViewController {
         
         loginTextField.autocorrectionType = .no
         loginTextField.spellCheckingType = .default
+        loginTextField.returnKeyType = .next
+        passwordTextField.returnKeyType = .done
         
         passwordTextField.isSecureTextEntry = true
         
         loginTextField.delegate = self
+        passwordTextField.delegate = self
         
-        /*
+     /* Не понимаю почему не работает 
+      
         if loginTextField.text == "" {
             loginButtonAction.isEnabled = false
         } else if loginTextField.text != "" {
             loginButtonAction.isEnabled = true
         }
-        */
+    */
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -64,6 +68,19 @@ class ViewController: UIViewController {
         
         loginTextField.text = ""
         passwordTextField.text = ""
+       
+        
+    }
+    
+    
+    @IBAction func loginAction(_ sender: Any) {
+        
+        if loginTextField.text == userName {
+            performSegue(withIdentifier: "UserViewSegue", sender: nil)
+        } else {
+            print("userNameIsFalse")
+        }
+       
         
     }
     
@@ -93,6 +110,18 @@ class ViewController: UIViewController {
 
 extension ViewController: UITextFieldDelegate {
     
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        
+        if textField == passwordTextField {
+            
+            performSegue(withIdentifier: "UserViewSegue", sender: nil)
+        
+        } else if textField == loginTextField {
+            passwordTextField.becomeFirstResponder()
+        }
+        
+        return true
+    }
     
 }
 

@@ -42,7 +42,8 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Login"/>
                                 <connections>
-                                    <segue destination="3Ft-U7-Jqb" kind="presentation" id="pRt-K6-Mcc"/>
+                                    <action selector="loginAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eqg-uY-41V"/>
+                                    <segue destination="3Ft-U7-Jqb" kind="presentation" identifier="UserViewSegue" id="pRt-K6-Mcc"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Ft0-Ld-Mj6">
