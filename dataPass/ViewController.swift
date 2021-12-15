@@ -75,10 +75,18 @@ class ViewController: UIViewController {
     
     @IBAction func loginAction(_ sender: Any) {
         
-        if loginTextField.text == userName {
+        if loginTextField.text == userName && passwordTextField.text == password {
             performSegue(withIdentifier: "UserViewSegue", sender: nil)
         } else {
-            print("userNameIsFalse")
+            let alert = UIAlertController(title: "Login or password is wrong", message: nil, preferredStyle: .alert)
+            
+            let cancelAction = UIAlertAction(title: "Ok", style: .cancel, handler: nil)
+
+            alert.addAction(cancelAction)
+            
+            present(alert, animated: true, completion: nil)
+
+
         }
        
         
