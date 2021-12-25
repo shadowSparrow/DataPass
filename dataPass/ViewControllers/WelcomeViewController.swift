@@ -7,17 +7,18 @@
 
 import UIKit
 
-class UserViewController: UIViewController {
+class WelcomeViewController: UIViewController {
 
     @IBOutlet weak var greetingTextLabel: UILabel!
     @IBOutlet weak var greetingIconLabel: UILabel!
     
-    var greatingText = ""
+    var greetingName = ""
+    var greetingSurname = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        greetingTextLabel.text = greatingText
+        greetingTextLabel.text = "Hello \(greetingName) \(greetingSurname)"
         greetingIconLabel.text = "🤟"
         
     }

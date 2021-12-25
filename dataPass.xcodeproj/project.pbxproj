@@ -7,25 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		042D9E062774E63A004D3D25 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042D9E052774E63A004D3D25 /* UserModel.swift */; };
+		042D9E0827750607004D3D25 /* AboutMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042D9E0727750607004D3D25 /* AboutMeViewController.swift */; };
+		042D9E0B27752B13004D3D25 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042D9E0A27752B13004D3D25 /* ProfileViewController.swift */; };
 		044CD186276A35B000D8CCAC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044CD185276A35B000D8CCAC /* AppDelegate.swift */; };
 		044CD188276A35B000D8CCAC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044CD187276A35B000D8CCAC /* SceneDelegate.swift */; };
-		044CD18A276A35B000D8CCAC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044CD189276A35B000D8CCAC /* ViewController.swift */; };
+		044CD18A276A35B000D8CCAC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044CD189276A35B000D8CCAC /* LoginViewController.swift */; };
 		044CD18D276A35B000D8CCAC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 044CD18B276A35B000D8CCAC /* Main.storyboard */; };
 		044CD18F276A35B300D8CCAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 044CD18E276A35B300D8CCAC /* Assets.xcassets */; };
 		044CD192276A35B300D8CCAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 044CD190276A35B300D8CCAC /* LaunchScreen.storyboard */; };
-		044CD19A276A3BC600D8CCAC /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044CD199276A3BC600D8CCAC /* UserViewController.swift */; };
+		044CD19A276A3BC600D8CCAC /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044CD199276A3BC600D8CCAC /* WelcomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		042D9E052774E63A004D3D25 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		042D9E0727750607004D3D25 /* AboutMeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutMeViewController.swift; sourceTree = "<group>"; };
+		042D9E0A27752B13004D3D25 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		044CD182276A35B000D8CCAC /* dataPass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dataPass.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		044CD185276A35B000D8CCAC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		044CD187276A35B000D8CCAC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		044CD189276A35B000D8CCAC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		044CD189276A35B000D8CCAC /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		044CD18C276A35B000D8CCAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		044CD18E276A35B300D8CCAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		044CD191276A35B300D8CCAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		044CD193276A35B300D8CCAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		044CD199276A3BC600D8CCAC /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
+		044CD199276A3BC600D8CCAC /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +45,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		042D9E09277510C1004D3D25 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				042D9E0727750607004D3D25 /* AboutMeViewController.swift */,
+				044CD199276A3BC600D8CCAC /* WelcomeViewController.swift */,
+				044CD189276A35B000D8CCAC /* LoginViewController.swift */,
+				042D9E0A27752B13004D3D25 /* ProfileViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
 		044CD179276A35B000D8CCAC = {
 			isa = PBXGroup;
 			children = (
@@ -60,8 +77,8 @@
 			children = (
 				044CD185276A35B000D8CCAC /* AppDelegate.swift */,
 				044CD187276A35B000D8CCAC /* SceneDelegate.swift */,
-				044CD189276A35B000D8CCAC /* ViewController.swift */,
-				044CD199276A3BC600D8CCAC /* UserViewController.swift */,
+				042D9E09277510C1004D3D25 /* ViewControllers */,
+				042D9E052774E63A004D3D25 /* UserModel.swift */,
 				044CD18B276A35B000D8CCAC /* Main.storyboard */,
 				044CD18E276A35B300D8CCAC /* Assets.xcassets */,
 				044CD190276A35B300D8CCAC /* LaunchScreen.storyboard */,
@@ -141,9 +158,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				044CD18A276A35B000D8CCAC /* ViewController.swift in Sources */,
-				044CD19A276A3BC600D8CCAC /* UserViewController.swift in Sources */,
+				044CD18A276A35B000D8CCAC /* LoginViewController.swift in Sources */,
+				044CD19A276A3BC600D8CCAC /* WelcomeViewController.swift in Sources */,
 				044CD186276A35B000D8CCAC /* AppDelegate.swift in Sources */,
+				042D9E062774E63A004D3D25 /* UserModel.swift in Sources */,
+				042D9E0B27752B13004D3D25 /* ProfileViewController.swift in Sources */,
+				042D9E0827750607004D3D25 /* AboutMeViewController.swift in Sources */,
 				044CD188276A35B000D8CCAC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
