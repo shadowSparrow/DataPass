@@ -19,6 +19,7 @@ class ProfileViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
         skillsLabel.text = skillText
         hobbyLabel.text = hobbyText
         
