@@ -15,14 +15,13 @@ class ProfileViewController: UIViewController {
     
     var skillText = ""
     var hobbyText = ""
-    
+    var imageName = ""
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
         skillsLabel.text = skillText
         hobbyLabel.text = hobbyText
-        
+        profileImageView.image = UIImage(named: imageName)
     }
     
 
