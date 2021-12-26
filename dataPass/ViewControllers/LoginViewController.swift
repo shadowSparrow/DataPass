@@ -54,13 +54,13 @@ class LoginViewController: UIViewController {
             } else if let navigationVC = viewcontroller as? UINavigationController {
                 let aboutVC = navigationVC.topViewController as! AboutMeViewController
                 
-                //let profileVC = navigationVC.topViewController as! ProfileViewController
+                
                 
                 aboutVC.name = user.person.name
                 aboutVC.surname = user.person.surname
                 aboutVC.imageName = user.person.pictureName
                 aboutVC.skillsText = user.person.professionalSkills
-                aboutVC.skillsText = user.person.hobbies
+                aboutVC.hobbyText = user.person.hobbies
                 
             }
         }

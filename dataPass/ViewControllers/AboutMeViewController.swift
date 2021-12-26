@@ -17,14 +17,12 @@ class AboutMeViewController: UIViewController {
     var skillsText = ""
     var hobbyText = ""
     
-    //private let user = User.getUser()
-    
-
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.title = name + " " + surname
         imageView.image = UIImage(named: imageName)
+        print(skillsText)
         
     }
     
@@ -34,8 +32,9 @@ class AboutMeViewController: UIViewController {
         guard let nextVC = segue.destination as? ProfileViewController else {return}
 
         nextVC.imageName = imageName
-        nextVC.skillText = skillsText
-        nextVC.skillText = skillsText
+        nextVC.skillsText = skillsText
+        nextVC.hobbyText = hobbyText
+        
     }
     
     @IBAction func showProfileAction(_ sender: Any) {

@@ -9,19 +9,28 @@ import UIKit
 
 class ProfileViewController: UIViewController {
 
+    
     @IBOutlet weak var profileImageView: UIImageView!
     @IBOutlet weak var skillsLabel: UILabel!
     @IBOutlet weak var hobbyLabel: UILabel!
     
-    var skillText = ""
+    var skillsText = ""
     var hobbyText = ""
     var imageName = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        skillsLabel.text = skillText
+        skillsLabel.text = skillsText
+        print(skillsText)
+        
         hobbyLabel.text = hobbyText
         profileImageView.image = UIImage(named: imageName)
+    }
+    
+    
+    @IBAction func backAction(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
     }
     
 
